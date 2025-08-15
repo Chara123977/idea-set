@@ -1,11 +1,11 @@
-# IntelliJ IDEA 个人使用及配置
+# JetBrains IntelliJ IDEA 个人使用及配置
 
 本项目仅用于个人学习与参考，请勿转载分发、请勿用于商业用途。对于使用本项目造成的任何后果均与作者无关。如有侵权，请联系立即删除。
 
 ## 1. 简介
 
 <!-- TOC -->
-* [IntelliJ IDEA 个人使用及配置](#intellij-idea-个人使用及配置)
+* [JetBrains IntelliJ IDEA 个人使用及配置](#jetbrains-intellij-idea-个人使用及配置)
   * [1. 简介](#1-简介)
   * [2. 激活](#2-激活)
     * [2.1 正式激活](#21-正式激活)
@@ -19,9 +19,11 @@
   * [5. 常用配置](#5-常用配置)
     * [5.1 主题](#51-主题)
     * [5.2 字体](#52-字体)
-    * [5.3 代码模板](#53-代码模板)
-    * [5.4 文件头注释](#54-文件头注释)
-    * [5.5 注释不顶格（不在行首）](#55-注释不顶格不在行首)
+    * [5.3 编码](#53-编码)
+    * [5.4 切换语言](#54-切换语言)
+    * [5.5 代码模板](#55-代码模板)
+    * [5.6 文件头注释](#56-文件头注释)
+    * [5.7 注释不顶格（不在行首）](#57-注释不顶格不在行首)
 <!-- TOC -->
 
 ## 2. 激活
@@ -58,12 +60,17 @@
 
   2. 进入仓库，复制 `ja-netfilter.jar` 文件的绝对路径
 
-  3. 修改 IDEA 的 `idea.vmoptions` 文件（文件在哪，Google 一下）
+  3. 修改 JetBrains 的 `.vmoptions` 文件（文件在哪，Google 一下）
 
-     Mac 上的地址：`~/Library/Application\ Support/JetBrains/IntelliJIdea2025.2/idea.vmoptions`
-
-     在末尾填上：
-
+     ```shell
+     # 比如 idea 在 Mac 上的地址
+     ~/Library/Application\ Support/JetBrains/IntelliJIdea2025.2/idea.vmoptions
+     # 比如 pycharm 在 Mac 上的地址
+     ~/Library/Application\ Support/JetBrains/IntelliJIdea2025.2/pycharm.vmoptions
+     
+     # 其他同理的。。。
+     ```
+     在末尾填上（若没有 `.vmoptions` 文件则创建即可）：
      ```shell
      -Xmx4096m
      
@@ -144,19 +151,31 @@
 
 ### 5.1 主题
 
-- 默认的 吸血鬼 主题，完美~
+- Appearance & Behavior -> Appearance -> Theme
 
 ![image.png](https://images.gitee.com/uploads/images/2019/0118/000955_8a1a2c2a_945727.png)
 
 ### 5.2 字体
 
-* 推荐 JetBrains Mono
-* JetBrains IDEA 应用字体和代码字体设置：
+* 直接设置字体大小：Editor -> Font
+* 使用鼠标滚轮调整字体大小：Editor -> General -> Change font size (Zoom) with Ctrl + Mouse Wheel
 
 ![IDEA应用字体](https://images.gitee.com/uploads/images/2019/0118/000955_06dda8fd_945727.png)
 ![代码字体](https://images.gitee.com/uploads/images/2019/0118/000955_dd80cfab_945727.png)
 
-### 5.3 代码模板
+### 5.3 编码
+
+* Editor -> File encodings
+
+![IDEA编码设置](https://ucc.alicdn.com/pic/developer-ecology/vjpue72jdvvb2_20a1568e41754f01bfaced211af49527.png?x-oss-process=image%2Fresize%2Cw_1400%2Cm_lfit%2Fformat%2Cwebp)
+
+### 5.4 切换语言
+
+* Appearance & Behavior -> System Settings -> Language and Region
+
+![IDEA语言设置](https://youtrack.jetbrains.com/api/files/334-60562?sign=MTc1NTMwMjQwMDAwMHwxMS0xfDMzNC02MDU2Mnw2V1gyXzhweHA2bEFoLUQ2eUl2cm1vNy0wakoxNEJsVlgySHBSV3RMRmJNDQo&updated=1725353354506)
+
+### 5.5 代码模板
 
 类似 sysout：
 
@@ -167,7 +186,7 @@
 
 ![image.png](https://images.gitee.com/uploads/images/2019/0118/000956_1335a7b5_945727.png)
 
-### 5.4 文件头注释
+### 5.6 文件头注释
 
 * Editor -> File and Code Templates
 
@@ -181,7 +200,7 @@
 
 ![image.png](https://images.gitee.com/uploads/images/2019/0118/000957_0a1a36f9_945727.png)
 
-### 5.5 注释不顶格（不在行首）
+### 5.7 注释不顶格（不在行首）
 
 * Editor -> Code Style -> Java -> Code Generation
 
