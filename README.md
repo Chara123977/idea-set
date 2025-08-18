@@ -89,7 +89,9 @@
 ### 2.4 非正式激活-支持功能列表
 
 - JetBrains 全家桶激活
-- 付费插件激活：配合猴油脚本，手动添加 `jetbra.js` 脚本到猴油中，打开 [https://plugins.jetbrains.com](https://plugins.jetbrains.com/) 搜索你想要激活的插件，点击 `Generate Code` 按钮就能得到该插件的激活码，粘入到插件的 `Activation Code` 中即可
+- 付费插件激活：
+  - 认证方式（使用佬友提供的linux.do认证提高使用门槛，认证需自行解决）：配合猴油脚本，手动添加 `MyJBLS.js` 脚本到猴油中，打开 [https://plugins.jetbrains.com](https://plugins.jetbrains.com/) 搜索你想要激活的插件，点击 `Generate Code` 按钮就能得到该插件的激活码，粘入到插件的 `Activation Code` 中即可
+  - ~~离线方式（影响太大，已下架自用）：配合猴油脚本，手动添加 `jetbra.js` 脚本到猴油中，打开 [https://plugins.jetbrains.com](https://plugins.jetbrains.com/) 搜索你想要激活的插件，点击 `Generate Code` 按钮就能得到该插件的激活码，粘入到插件的 `Activation Code` 中即可~~
 - ~~GitHub Copilot 激活：cocopilot 公车已废弃~~
 - ~~Augment 激活：下载 Augment 插件，点击 Sign In 按钮【本地授权】，即可无限免费使用 Claude Sonnet 4 系列模型（代码开发和编程最强模型）~~
 
