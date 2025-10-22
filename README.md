@@ -72,8 +72,6 @@
      ```
      在末尾填上（若没有 `.vmoptions` 文件则创建即可）：
      ```shell
-     -Xmx4096m
-     
      --add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
      --add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
      
