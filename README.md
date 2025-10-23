@@ -65,14 +65,16 @@
      ```shell
      # 比如 idea 在 Mac 上的地址
      ~/Library/Application\ Support/JetBrains/IntelliJIdea2025.2/idea.vmoptions
-     # 比如 pycharm 在 Mac 上的地址
-     ~/Library/Application\ Support/JetBrains/IntelliJIdea2025.2/pycharm.vmoptions
      # 比如 idea 在 Windows11 上的地址
      D:\IntelliJ IDEA 2025.2\bin\idea64.exe.vmoptions
-     # 注:注意文件名
+     
+     # 比如 pycharm 在 Mac 上的地址
+     ~/Library/Application\ Support/JetBrains/IntelliJIdea2025.2/pycharm.vmoptions
+     
+     # 注: 注意文件名
      # 其他同理的。。。
      ```
-     在末尾填上（若没有 `.vmoptions` 文件则创建即可 若你为windows请注意上一步的文件名）：
+     在末尾填上（若没有 `.vmoptions` 文件则创建即可，若为 Windows 请注意上一步的文件名）：
      ```shell
      --add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
      --add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
@@ -89,11 +91,17 @@
 ### 2.4 非正式激活-支持功能列表
 
 - JetBrains 全家桶激活
-- 付费插件激活：
-  - 认证方式（使用佬友提供的linux.do认证提高使用门槛，认证需自行解决）：配合猴油脚本，手动添加 `MyJBLS.js` 脚本到猴油中，打开 [https://plugins.jetbrains.com](https://plugins.jetbrains.com/) 搜索你想要激活的插件，点击 `Generate Code` 按钮就能得到该插件的激活码，粘入到插件的 `Activation Code` 中即可
-  - ~~离线方式（影响太大，已下架自用）：配合猴油脚本，手动添加 `jetbra.js` 脚本到猴油中，打开 [https://plugins.jetbrains.com](https://plugins.jetbrains.com/) 搜索你想要激活的插件，点击 `Generate Code` 按钮就能得到该插件的激活码，粘入到插件的 `Activation Code` 中即可~~
 - ~~GitHub Copilot 激活：cocopilot 公车已废弃~~
 - ~~Augment 激活：下载 Augment 插件，点击 Sign In 按钮【本地授权】，即可无限免费使用 Claude Sonnet 4 系列模型（代码开发和编程最强模型）~~
+
+- 付费插件脚本：
+    - 认证方式（使用佬友提供的linux.do认证提高使用门槛，认证需自行解决）：配合猴油脚本，手动添加 `_MyJBLS.js` 脚本到猴油中，打开 [https://plugins.jetbrains.com](https://plugins.jetbrains.com/) 搜索你想要激活的插件，点击 `Generate Code` 按钮就能得到该插件的激活码，粘入到插件的 `Activation Code` 中即可
+    - ~~离线方式（影响太大，已下架自用）：配合猴油脚本，手动添加 `jetbra.js` 脚本到猴油中，打开 [https://plugins.jetbrains.com](https://plugins.jetbrains.com/) 搜索你想要激活的插件，点击 `Generate Code` 按钮就能得到该插件的激活码，粘入到插件的 `Activation Code` 中即可~~
+
+- 付费插件激活码：
+  - 本仓库现只随缘更新 `Rainbow Brackets` 和 `MyBatisCodeHelperPro (Marketplace Edition)` 这两个插件 2 年的激活码
+  - 如果您是插件作者(望手下留情)，或已知对以上 2 个插件造成恶意影响请联系我删除
+  - 不要再问，仓库内不会再添加其他任何付费插件的激活码
 
 ## 3. 配置同步
 
