@@ -52,8 +52,6 @@
 
 ### 2.3 非正式激活（推荐）
 
-- ~~2021.1.3版本，已不推荐（搭配试用30天到期自动续期插件永久免费食用），IDEA官方历史版本下载地址：[https://www.jetbrains.com/idea/download/other.html](https://www.jetbrains.com/idea/download/other.html)~~
-
 - 使用始皇的：[ja-netfilter](https://gitee.com/ja-netfilter/ja-netfilter) 激活，相关文件已在本仓库中，参考如下步骤激活：
 
   1. 克隆本仓库：`git clone https://github.com/zpj80231/idea-set.git`
@@ -73,9 +71,6 @@
      ```
      在末尾填上（若没有 `.vmoptions` 文件则创建即可，若为 Windows 请注意上一步的文件名）：
      ```shell
-     --add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
-     --add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
-     
      -javaagent:/Users/xxx/idea-set/ja-netfilter.jar
      ```
      **将其中的 `/Users/xxx/idea-set/ja-netfilter.jar` 替换为本仓库下 `ja-netfilter.jar` 文件的绝对路径。**
