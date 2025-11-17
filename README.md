@@ -10,7 +10,7 @@
   * [2. 激活](#2-激活)
     * [2.1 正式激活](#21-正式激活)
     * [2.2 利用开源项目激活](#22-利用开源项目激活)
-    * [2.3 非正式激活（推荐）](#23-非正式激活推荐)
+    * [2.3 非正式激活（推荐）🌟](#23-非正式激活推荐)
     * [2.4 非正式激活-支持功能列表](#24-非正式激活-支持功能列表)
   * [3. 配置同步](#3-配置同步)
     * [3.1 JetBrains 账号配置同步（推荐）](#31-jetbrains-账号配置同步推荐)
@@ -24,7 +24,7 @@
     * [5.5 代码模板](#55-代码模板)
     * [5.6 文件头注释](#56-文件头注释)
     * [5.7 注释不顶格（不在行首）](#57-注释不顶格不在行首)
-<!-- TOC -->
+<!-- TOC -->[]()
 
 ## 2. 激活
 
@@ -50,22 +50,19 @@
 
 > 或者直接参考这篇文章：[免费正版 IntelliJ IDEA license 详细指南](https://blog.csdn.net/zlt2000/article/details/115611788)
 
-### 2.3 非正式激活（推荐）
+### 2.3 非正式激活（推荐）🌟
 
 - 使用始皇的：[ja-netfilter](https://gitee.com/ja-netfilter/ja-netfilter) 激活，相关文件已在本仓库中，参考如下步骤激活：
 
-  1. 克隆本仓库：`git clone https://github.com/zpj80231/idea-set.git`
-  
-  2. 进入仓库，复制 `ja-netfilter.jar` 文件的绝对路径
-
-  3. 修改 JetBrains 的 `.vmoptions` 文件 ，点击顶部菜单：`Help --> Edit Custom VM Options...`（或参考 [issue 13](https://github.com/zpj80231/idea-set/issues/13#issuecomment-3526721400)）
-     在末尾填上：
-    ```shell
-     -javaagent:/Users/xxx/idea-set/ja-netfilter.jar
-     ```
-     **将其中的 `/Users/xxx/idea-set/ja-netfilter.jar` 替换为本仓库下 `ja-netfilter.jar` 文件的绝对路径。**
-
-  4. 若已经打开请先关闭，打开 IDEA，填入激活码（activation_code.txt 文件内容）
+    1. 克隆本仓库：`git clone https://github.com/zpj80231/idea-set.git`
+    2. 进入仓库，复制 `ja-netfilter.jar` 文件的绝对路径
+    3. 修改 JetBrains 的 `.vmoptions` 文件 ，点击顶部菜单：`Help --> Edit Custom VM Options...`（或参考 [issue 13](https://github.com/zpj80231/idea-set/issues/13#issuecomment-3526721400)）
+       在末尾填上：
+       ```properties
+       -javaagent:/Users/xxx/idea-set/ja-netfilter.jar
+       ```
+       **将其中的 `/Users/xxx/idea-set/ja-netfilter.jar` 替换为本仓库下 `ja-netfilter.jar` 文件的绝对路径。**
+    4. 若已经打开请先关闭，打开 IDEA，填入激活码（activation_code.txt 文件内容）
 
 - 激活后只需定期更新本仓库即可，这样你能一直获取到最新功能。当然，有能力的还是推荐购买正版激活。
 
