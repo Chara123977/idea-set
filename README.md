@@ -63,10 +63,11 @@
        
        ```properties
        # 将其中的 `/Users/xxx/idea-set/ja-netfilter.jar` 替换为绝对路径
+       # 路径一定要正确，更新 agent 配置后，一定要重启 idea 再输入激活码
        -javaagent:/Users/xxx/idea-set/ja-netfilter.jar
        ```
        
-    4. 重新打开 IDEA，点击顶部菜单：`Help --> Manage Subscriptions...`，填入激活码即可（activation_code.txt 文件内容）
+    4. 更新 agent 配置后，一定要重启 IDEA。点击顶部菜单：`Help --> Manage Subscriptions...`，填入 `activate-code-app` 文件夹激活码
 
 - 激活后只需定期更新本仓库即可，这样你能一直获取到最新功能。当然，有能力的还是推荐购买正版激活。
 
