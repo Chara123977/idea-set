@@ -58,14 +58,14 @@
 
     1. 克隆本仓库：`git clone https://github.com/zpj80231/idea-set.git`
     2. 进入仓库，复制 `ja-netfilter.jar` 文件的绝对路径
-    3. 打开并进入 IDEA（可以先试用），点击顶部菜单：`Help --> Edit Custom VM Options...`（参考 [issue 13](https://github.com/zpj80231/idea-set/issues/13#issuecomment-3526721400)）
+    3. 打开并进入 IDEA，点击顶部菜单：`Help --> Edit Custom VM Options...`（参考 [issue 13](https://github.com/zpj80231/idea-set/issues/13#issuecomment-3526721400)）
        在末尾填上：
        
        ```properties
        ### 注意事项 ###
-       # 1.请提前退出或禁用：IDEA 中登录的个人账号、CodeWithMe 等自家有远程交互能力的插件（这类插件可能存在遥测机制，导致掉线或激活无效）
+       # 1.请退出或禁用：IDEA 中登录的个人账号、CodeWithMe 等自家有远程交互能力的插件（这类插件可能存在遥测机制，导致掉线或激活无效）
        # 2.请确保将 `/Users/xxx/idea-set/ja-netfilter.jar` 替换为实际的绝对路径
-       # 3.更新此 agent 配置和禁用相关插件后，务必重启 IDEA 再输入激活码
+       # 3.更新此配置和禁用相关插件后，务必重启 IDEA 再输入激活码
        -javaagent:/Users/xxx/idea-set/ja-netfilter.jar
        ```
        
