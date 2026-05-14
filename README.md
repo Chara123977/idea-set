@@ -6,7 +6,7 @@
 
 🐷 不更新不代表不能用，放心升级 IDE，稳稳适配新版本。
 
-<img src=".images/idea-start-page.png" style="margin-left: 0; max-width: 400px;">
+<img src=".images/idea-start-page.png" style="margin-left: 0; width: 400px;">
 
 ## 1. 简介
 
